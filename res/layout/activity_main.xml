@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".StartingPoint" >
+
+   <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageButton1"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/red_button" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:src="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/dates_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sports_red"
+        android:layout_below="@+id/sports_red"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/dates_red" />
+
+    <ImageButton
+        android:id="@+id/contactus"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/sports_red"
+        android:layout_alignLeft="@+id/imageButton2"
+        android:background="@drawable/contactus" />
+
+    <ImageButton
+        android:id="@+id/ibexit"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/quit" />
+
+    <ImageButton
+        android:id="@+id/help"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/sports_red"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/contactus"
+        android:background="@drawable/help" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:text="mitsummit.mitpune.edu.in"
+        android:textColor="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/sports_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contactus"
+        android:layout_below="@+id/ibexit"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/sports_red" />
+
+    <ImageButton
+        android:id="@+id/updates_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dates_red"
+        android:layout_alignLeft="@+id/imageView1"
+        android:background="@drawable/other_red" />
+
+    <ImageButton
+        android:id="@+id/register_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dates_red"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/register_red" />
+
+    <ImageButton
+        android:id="@+id/about_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/updates_red"
+        android:layout_alignTop="@+id/dates_red"
+        android:background="@drawable/about_red" />
+
+    <ImageButton
+        android:id="@+id/calendar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignRight="@+id/updates_red"
+        android:layout_alignTop="@+id/contactus"
+        android:background="@drawable/schedule" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calendar"
+        android:layout_alignLeft="@+id/updates_red"
+        android:background="@drawable/settings"
+        android:paddingLeft="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/updates_red"
+        android:layout_alignTop="@+id/updates_red"
+        android:src="@drawable/blank_new" />
+
+</RelativeLayout>

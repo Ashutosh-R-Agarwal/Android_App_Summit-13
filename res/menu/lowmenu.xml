@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<item 
+    android:title="Register"
+    android:id="@+id/menuregister"
+/>
+<item 
+    android:title="Dates"
+    android:id="@+id/menudates"
+/>
+<item 
+    android:title="Contact Us"
+    android:id="@+id/menucontactus"
+/>
+<item 
+    android:title="About"
+    android:id="@+id/menuabout"
+/>    
+<item 
+    android:title="Exit"
+    android:id="@+id/exit"
+/>    
+
+</menu>

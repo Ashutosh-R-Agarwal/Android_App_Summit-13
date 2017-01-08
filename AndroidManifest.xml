@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.piyushagade.summit13"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         // Splash Activity
+        <activity
+            android:name="com.piyushagade.summit13.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         // Update Page Activity
+        <activity
+            android:name="com.piyushagade.summit13.WebViewActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.WEBVIEWACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         // Service UI Activity
+        <activity
+            android:name="com.piyushagade.summit13.Service"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Download Page Activity
+        <activity
+            android:name="com.piyushagade.summit13.Download"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.DOWNLOAD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Main Screen Activity
+        <activity
+            android:name="com.piyushagade.summit13.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.ACTIVITYMAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          // Contact Activity
+        <activity
+            android:name="com.piyushagade.summit13.Contactus"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.CONTACTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         // About summit Activity
+        <activity
+            android:name="com.piyushagade.summit13.AboutSummit"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.ABOUTSUMMIT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        // About App Activity
+        <activity
+            android:name="com.piyushagade.summit13.About"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         // Help Activity
+        <activity
+            android:name="com.piyushagade.summit13.Help"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.HELP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Register Activity
+        <activity
+            android:name="com.piyushagade.summit13.Register"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.REGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Dates Activity
+        <activity
+            android:name="com.piyushagade.summit13.Dates"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.DATES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Sports Page Activity
+        <activity
+            android:name=".Sports"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.SPORTS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Menu Regsiter Activity
+        <activity
+            android:name=".MenuRegister"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.MENUREGISTER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Menu Settings Activity
+        <activity
+            android:name=".MenuSettings"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.MENUSETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Widget Activity 
+        <!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver
+            android:name=".WidgetProvider"
+            android:label="MIT Summit &apos;13" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget" />
+        </receiver>
+		//Widget Contactus
+        <activity
+            android:name=".WidgetContactus"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.WIDGETCONTACTUS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+		// Cricket Activity
+        <activity
+            android:name=".Cricket"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.CRICKET" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Football Activity
+        <activity
+            android:name=".Football"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.FOOTBALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Baseball Activity
+        <activity
+            android:name=".Baseball"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.BASEBALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Basketball Activity
+        <activity
+            android:name=".Basketball"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.BASKETBALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Badminton Activity
+        <activity
+            android:name=".Badminton"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.BADMINTON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // bOXING Activity
+        <activity
+            android:name=".Boxing"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.BOXING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".Chess"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.CHESS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+          // Cricket Activity
+        <activity
+            android:name=".Carrom"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.CARROM" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".LawnTennis"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.LAWNTENNIS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".TableTennis"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.TABLETENNIS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".Rowing"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.ROWING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".Squash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.SQUASH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".Waterpolo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.WATERPOLO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".Swimming"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.SWIMMING" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        // Cricket Activity
+        <activity
+            android:name=".Volleyball"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.piyushagade.summit13.VOLLEYBALL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         // Service Activity
+        <service android:name="com.piyushagade.summit13.MyService" />
+    </application>
+
+</manifest>

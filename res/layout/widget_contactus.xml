@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WidgetProvider" 
+    android:background="@drawable/widget_bg">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/callus"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="21dp"
+            android:text="Call Us" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back"
+            android:layout_marginTop="42dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="Click below to contact a volunteer." />
+
+        <Button
+            android:id="@+id/website"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/callus"
+            android:layout_below="@+id/callus"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/back"
+            android:text="www.mitsummit.‌in" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/website"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="mitsummit@mitpune.edu.in" />
+    
+</RelativeLayout>
