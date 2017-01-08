@@ -1,1 +1,1 @@
-# Android_App_Summit-13
+This android application was created along with Piyush Agade. The purpose of this Android app was very basic just to give out info about all the games and rules of the event. App was used by around 500 people.
